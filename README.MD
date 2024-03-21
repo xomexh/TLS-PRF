@@ -2,9 +2,10 @@
 
 TLS 1.2 PRF implemeneted & verified manually with PRF Test Vectors from IBM Researchers. Cross verified using prf.py
 
-Test Vectors
-```
+# Test Vectors
+Kindly provided by IBM Researchers online.
 
+```
 # Generating 100 bytes of pseudo-randomness using TLS1.2PRF-SHA256
 Secret (16 bytes):
 0000    9b be 43 6b a9 40 f0 17    ..Ck....
@@ -95,3 +96,11 @@ result:
 0058 a7 2e 5a 51 10 ff f7 01
 0060 87 34 7b 66
 ```
+
+# Test
+
+The code produces expected output & has been cross verified with the above vector. 
+
+The expected value & obtained output has been commented in the main.rs file. 
+
+Run using ```cargo run```.

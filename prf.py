@@ -14,9 +14,9 @@ phash= ["","","","",""]
 a[0] = label + seed
 a[1] = calculate_hmac_sha256(secret, a[0])
 
-for i in range(4):
-    a[i+1]=calculate_hmac_sha256(secret, a[i])
-    phash[i]=phash[i-1]+calculate_hmac_sha256(secret, (a[i+1]+a[0]))
+# for i in range(4):
+#     a[i+1]=calculate_hmac_sha256(secret, a[i])
+#     phash[i]=phash[i-1]+calculate_hmac_sha256(secret, (a[i+1]+a[0]))
 
 print(a);
 print(phash);
